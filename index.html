@@ -1,0 +1,106 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather App</title>
+    <meta charset="UTF-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Sacramento&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/0032934867.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="row">
+                <div class="today col-10" id="date">Sunday, 19 april 2021</div>
+
+                <div class="time col-2" id="time">13:21</div>
+            </div>
+
+            <div class="row">
+                <div class="col-7">
+                    <h1 class="actual-city text-capitalize" id="city">Amsterdam</h1>
+                    <h1 class="actual-emoji">☁️</h1>
+                </div>
+
+                <div class="col-5">
+                    <h1 class="actual-temperature" id="actualtemperature">23</h1>
+                    <span class="units">
+							<a href="#" class="celsius" id="cel">°C</a>
+							<a href="#" class="fahrenheit" id="fah">°F</a>
+						</span>
+                    <ul class="info">
+                        <li class="cloudiness text-capitalize">Mostly Cloudy</li>
+                        <li class="rainfall text-capitalize">Rain 30%</li>
+                        <li class="wind text-capitalize">Wind 5 km/h</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="row next-days">
+                <div class="col">
+                    <p class="day">Monday</p>
+                    <p class="icon">🌧</p>
+                    <p class="degree">8°</p>
+                </div>
+
+                <div class="col">
+                    <p class="day">Tuesday</p>
+                    <p class="icon">🌤</p>
+                    <p class="degree">10°</p>
+                </div>
+
+                <div class="col">
+                    <p class="day">Wednesday</p>
+                    <p class="icon">☀️</p>
+                    <p class="degree">15°</p>
+                </div>
+
+                <div class="col">
+                    <p class="day">Thursday</p>
+                    <p class="icon">🌧</p>
+                    <p class="degree">13°</p>
+                </div>
+
+                <div class="col">
+                    <p class="day">Friday</p>
+                    <p class="icon">🌧</p>
+                    <p class="degree">11°</p>
+                </div>
+            </div>
+
+            <hr />
+            <span class="location">
+					<form id="search-form">
+						<input
+							id="search-city"
+							class="change-city"
+							type="text"
+							placeholder="Enter City"
+							autofocus="on"
+							autocomplete="off"
+						/>
+						<input class="search-button" type="submit" value="Search" />
+					</form>
+
+					<button class="location-button" id="currentLocation">
+						Your Location
+					</button>
+				</span>
+
+            <span class="footer">👩‍💻 by Alessandra Scarpellini</span>
+        </div>
+    </div>
+    <script src="src/index.js"></script>
+</body>
+
+</html>

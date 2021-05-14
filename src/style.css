@@ -1,0 +1,124 @@
+/** @format */
+
+.card {
+    margin: 0 auto;
+    max-width: 700px;
+    margin-top: 40px;
+    background-color: #f6fcfd;
+    border: 5px solid #6ecad8;
+    border-radius: 20px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.today,
+.time {
+    padding: 10px 20px;
+    color: #b368c6;
+}
+
+.actual-temperature {
+    display: inline-block;
+    margin-right: 3px;
+    padding: 10px;
+}
+
+.actual-city,
+.actual-temperature {
+    text-align: center;
+    font-size: 38px;
+    box-sizing: content-box;
+    color: #546d86;
+    border: 3px solid #8ac8f8;
+    background-color: #e0f2fb;
+    border-radius: 34px;
+    padding: 10px;
+    margin: 26px;
+}
+
+.celsius,
+.fahrenheit {
+    margin: none;
+    color: #546d86;
+    text-decoration: none;
+    font-size: 36px;
+}
+
+.celsius:hover,
+.fahrenheit:hover {
+    color: #546d86;
+    text-decoration: underline;
+}
+
+.actual-emoji {
+    text-align: center;
+    font-size: 82px;
+    margin: 0;
+}
+
+.info {
+    list-style: none;
+    color: #b368c6;
+    padding-top: 4px;
+}
+
+hr {
+    height: 3px;
+    background-color: #88d7d2;
+    border: none;
+}
+
+.next-days {
+    text-align: center;
+    color: #4fae58;
+}
+
+.icon {
+    border: 3px solid #8ac8f8;
+    background-color: #e0f2fb;
+    padding: 15px;
+    border-radius: 34px;
+    font-size: 24px;
+    margin: 8px;
+}
+
+.degree {
+    font-size: 18px;
+}
+
+.change-city,
+.search-button,
+.location-button {
+    display: inline;
+    font-size: 18px;
+    color: #b368c6;
+    text-align: center;
+    border: 2px solid #b368c6;
+    border-radius: 30px;
+    background: #f0dbf5;
+    margin: 10px;
+}
+
+.change-city {
+    padding: 5px 60px;
+    box-sizing: content-box;
+}
+
+.search-button,
+.location-button {
+    padding: 5px;
+    transition: all 200ms ease-in-out;
+}
+
+.search-button:hover,
+.location-button:hover {
+    background: #b368c6;
+    color: #f0dbf5;
+}
+
+.footer {
+    font-family: "Sacramento", cursive;
+    text-align: right;
+    margin: 10px;
+    font-size: 18px;
+    color: #4fae58;
+}
