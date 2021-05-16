@@ -25,12 +25,12 @@
             </div>
 
             <div class="row">
-                <div class="col-7">
+                <div class="col-8">
                     <h1 class="actual-city text-capitalize" id="city">Amsterdam</h1>
                     <h1 class="actual-emoji">☁️</h1>
                 </div>
 
-                <div class="col-5">
+                <div class="col-4">
                     <h1 class="actual-temperature" id="actualtemperature">23</h1>
                     <span class="units">
 							<a href="#" class="celsius" id="cel">°C</a>
@@ -79,21 +79,14 @@
             </div>
 
             <hr />
-            <span class="location">
-					<form id="search-form">
-						<input
-							id="search-city"
-							class="change-city"
-							type="text"
-							placeholder="Enter City"
-							autofocus="on"
-							autocomplete="off"
-						/>
-						<input class="search-button" type="submit" value="Search" />
-					</form>
 
+            <form class="search-form" id="search-form">
+                <input id="search-city" class="change-city" type="text" placeholder="Enter City" autofocus="on" autocomplete="off" />
+                <input class="search-button" type="submit" value="Search" />
+            </form>
+            <span class="location">
 					<button class="location-button" id="currentLocation">
-						Your Location
+						Your Location 🌍
 					</button>
 				</span>
 
